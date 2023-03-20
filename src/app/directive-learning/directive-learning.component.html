@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="passwordActiveHidden()">Şifreyi gizle/göster</button>
+<p *ngIf="isPasswordActiveHidden">Gizli Parola = ton balığı</p>
+
+<div *ngFor="let itemPAH of passwordActiveHiddens; let i = index" 
+    [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': i >= 5}">
+        {{itemPAH}}
+</div>
+

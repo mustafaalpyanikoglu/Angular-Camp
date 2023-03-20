@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserNameComponent } from './user-name/user-name.component';
+import { DirectiveLearningComponent } from './directive-learning/directive-learning.component';
 
 @NgModule({
   declarations: [  //component'lar kaydedilir
@@ -17,7 +18,8 @@ import { UserNameComponent } from './user-name/user-name.component';
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    UserNameComponent
+    UserNameComponent,
+    DirectiveLearningComponent
   ],
   imports: [
     BrowserModule,
