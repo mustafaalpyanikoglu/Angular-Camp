@@ -1,0 +1,9 @@
+<div class="container">
+    <label>User Name</label>
+<input type="text" class="form-control" (input)="updateUserName($event)">
+<input type="text" class="form-control" [(ngModel)] = "userName">
+
+<p>{{userName}}</p>
+
+<button class="btn btn-success" [disabled] = "!isUserName" (click)="onUpdateUserName()">Kullanıcı adını güncelle</button>
+</div>
